@@ -1,24 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CLLocationAccuracy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coE-v8-8js">
+                                <rect key="frame" x="20" y="428" width="374" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exact position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-xR-2vv">
+                                        <rect key="frame" x="0.0" y="29" width="356" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location authorization:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wox-yc-be2">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y30-e8-xhw">
+                                        <rect key="frame" x="366" y="0.0" width="8" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3X-EY-VMO">
+                                        <rect key="frame" x="366" y="29" width="8" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="v3X-EY-VMO" firstAttribute="leading" secondItem="tJS-xR-2vv" secondAttribute="trailing" constant="10" id="0R2-Dx-3ob"/>
+                                    <constraint firstAttribute="bottom" secondItem="v3X-EY-VMO" secondAttribute="bottom" id="0wO-Ui-s4H"/>
+                                    <constraint firstItem="Y30-e8-xhw" firstAttribute="leading" secondItem="wox-yc-be2" secondAttribute="trailing" constant="10" id="3Rj-1C-0kh"/>
+                                    <constraint firstItem="Y30-e8-xhw" firstAttribute="centerY" secondItem="wox-yc-be2" secondAttribute="centerY" id="Aht-ld-Lza"/>
+                                    <constraint firstAttribute="trailing" secondItem="v3X-EY-VMO" secondAttribute="trailing" id="Uqg-dt-wbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y30-e8-xhw" secondAttribute="trailing" id="Wff-Cf-AnA"/>
+                                    <constraint firstAttribute="bottom" secondItem="tJS-xR-2vv" secondAttribute="bottom" id="WmE-Bw-5Uo"/>
+                                    <constraint firstItem="tJS-xR-2vv" firstAttribute="top" secondItem="wox-yc-be2" secondAttribute="bottom" constant="8" symbolic="YES" id="cKM-qs-uX7"/>
+                                    <constraint firstItem="Y30-e8-xhw" firstAttribute="top" secondItem="coE-v8-8js" secondAttribute="top" id="fBa-aj-coe"/>
+                                    <constraint firstItem="wox-yc-be2" firstAttribute="leading" secondItem="coE-v8-8js" secondAttribute="leading" id="iGx-Wl-ree"/>
+                                    <constraint firstItem="wox-yc-be2" firstAttribute="top" secondItem="coE-v8-8js" secondAttribute="top" id="ijs-Pr-j75"/>
+                                    <constraint firstItem="tJS-xR-2vv" firstAttribute="leading" secondItem="coE-v8-8js" secondAttribute="leading" id="k8O-U2-KQb"/>
+                                    <constraint firstItem="v3X-EY-VMO" firstAttribute="trailing" secondItem="Y30-e8-xhw" secondAttribute="trailing" id="nFk-zP-15F"/>
+                                    <constraint firstItem="v3X-EY-VMO" firstAttribute="centerY" secondItem="tJS-xR-2vv" secondAttribute="centerY" id="yLr-B1-GaZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-77-l2c">
+                                <rect key="frame" x="158" y="498" width="98" height="30"/>
+                                <state key="normal" title="Open Settings"/>
+                                <connections>
+                                    <action selector="openSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkg-0w-d3R"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="coE-v8-8js" secondAttribute="trailing" constant="20" id="7jO-GL-QFQ"/>
+                            <constraint firstItem="SqZ-77-l2c" firstAttribute="top" secondItem="coE-v8-8js" secondAttribute="bottom" constant="20" id="FxJ-9R-2Zr"/>
+                            <constraint firstItem="coE-v8-8js" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OT4-LE-TE6"/>
+                            <constraint firstItem="SqZ-77-l2c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="XqL-xR-wcg"/>
+                            <constraint firstItem="coE-v8-8js" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pII-eZ-k6g"/>
+                            <constraint firstItem="SqZ-77-l2c" firstAttribute="centerX" secondItem="coE-v8-8js" secondAttribute="centerX" id="zFT-lI-cGl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authStatus" destination="Y30-e8-xhw" id="AH6-Ai-0Tp"/>
+                        <outlet property="exactPositionEnabled" destination="v3X-EY-VMO" id="oJa-eN-a2z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

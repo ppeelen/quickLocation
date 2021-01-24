@@ -43,7 +43,9 @@
 				2ACDA50825BDCB8500834D67 /* CLLocationAccuracy */,
 				2ACDA50725BDCB8500834D67 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		2ACDA50725BDCB8500834D67 /* Products */ = {
 			isa = PBXGroup;
